@@ -21,6 +21,10 @@ button {
     border: none;
 }
 
+label {
+    font-size: 16px;
+}
+
 body {
     font-family: JetBrains Mono;
     font-size: 14px;
@@ -125,6 +129,7 @@ h1 {
 }
 
 ul {
+    margin-top: 10px;
     display: flex;
     flex-direction: column;
     gap: 20px
@@ -133,10 +138,6 @@ ul {
 .options-container ul li {
     display: flex;
     align-items: center;
-}
-
-.options-container ul li label {
-    font-size: 13px;
 }
 
 .options-container ul li .markbox {
@@ -168,6 +169,7 @@ ul {
     font-weight: 600;
     color: var(--Strong-Black);
     border: 1px solid var(--Strong-Black);
+    font-size: 15px;
 }
 
 #generate:hover {
