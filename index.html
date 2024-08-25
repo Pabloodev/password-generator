@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Password Generator | pablodev</title>
+  <link rel="shortcut icon" href="assets/images/favicon-32x32.png" type="image/x-icon">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="assets/styles/style.css">
+  <script defer src="main.js"></script>
+</head>
+<body>
+  <main>
+    <h1>Password Generator</h1>
+    
+    <section class="generated-container">
+      <span class="password">PT43aa3dfaf</span>
+
+      <button id="copied-button" class="copy">
+      <img src="assets/images/icon-copy.svg" alt="Icon copy">
+      </button>
+
+      <span id="copied-text" class="copied hidden">COPIED</span>
+    </section>
+    
+    <div class="set">
+      <section class="length-choose ">
+        <div class="choose-container">
+          <span>Character Length</span>
+          <span class="character-number" id="number-length"></span>
+        </div>
+        <input type="range" class="slider" min="0" max="20" value="10" id="slider">
+      </section>
+      
+      <section class="options-container">
+        <ul>
+          <li>
+            <input class="markbox" type="checkbox" name="upper" id="upper">
+            <label for="upper">Include Uppercase Letters</label>
+          </li>
+          <li>
+            <input class="markbox" type="checkbox" name="lower" id="lower">
+            <label for="lower">Include Lowercase Letters</label>
+          </li>
+          <li>
+            <input class="markbox" type="checkbox" name="include-numbers" id="include-numbers">
+            <label for="include-numbers">Include Numbers</label>
+          </li>
+          <li>
+            <input class="markbox" type="checkbox" name="include-symbols" id="include-symbols">
+            <label for="include-symbols">Include Symbols</label>
+          </li>
+        </ul>
+      </section>
+      
+      <img id="diff" class="difficult" src="assets/images/empty.png" alt="">
+      
+      <button id="generate">
+        <span>GENERATE</span>
+        <img class="arrow" src="assets/images/icon-arrow-right.svg" alt="">
+      </button>
+    </div>
+  </main>
+</body>
+</html>
