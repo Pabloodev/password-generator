@@ -78,4 +78,5 @@ document.getElementById('generate').addEventListener('click', () => {
     const password = generatePassword(length, includeUppercase, includeLowercase, includeNumbers, includeSymbols);
 
     document.querySelector('.password').textContent = password;
+    document.querySelector('.password').classList.remove('default')
 });
