@@ -14,7 +14,7 @@ This is a solution to the [Password generator app challenge on Frontend Mentor](
 ### Links
 
 - Solution URL: [Repositore](https://github.com/Pabloodev/password-generator)
-- Live Site URL: [Live Server Site](https://your-live-site-url.com)
+- Live Site URL: [Live Server Site]([https://your-live-site-url.com](https://pabloodev.github.io/password-generator/))
 
 ## My process
 
